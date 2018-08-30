@@ -20,8 +20,9 @@ Install
 Or download from __Bioconductor__ at:  
 https://bioconductor.org/packages/SNPediaR
 
-    source("https://bioconductor.org/biocLite.R")
-    biocLite("SNPediaR")
+    if (!requireNamespace("BiocManager", quietly=TRUE))
+        install.packages("BiocManager")
+    BiocManager::install("SNPediaR")
 
 
 Vignette
